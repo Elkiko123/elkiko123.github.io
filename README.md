@@ -1,5 +1,7 @@
 # Portafolio · Erik Tovar
 
+🌐 **Sitio en línea:** https://elkiko123.github.io/
+
 Portafolio personal de **Erik Tovar Carreón**, estudiante de Ingeniería en Sistemas Computacionales.
 
 Sitio estático con proyectos de escritorio, web, móvil, IA, 3D y bases de datos. Incluye tema claro/oscuro, animaciones, filtros por categoría y galerías con lightbox.
