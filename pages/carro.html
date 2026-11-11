@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Control de carro con Arduino · Erik Tovar</title>
-    <meta name="description" content="App móvil Flutter para controlar un carro electrónico Arduino vía Bluetooth." />
+    <title>Vehículo eléctrico con Arduino · Erik Tovar</title>
+    <meta name="description" content="Armado de hardware, conexión de componentes electrónicos y programación de Arduino para el control de un vehículo eléctrico." />
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
@@ -36,18 +36,18 @@
 
         <!-- BREADCRUMB -->
         <div class="breadcrumb fade-up">
-            <a href="../index.html">Inicio</a> <i class="fas fa-chevron-right"></i> <span>Proyectos</span> <i class="fas fa-chevron-right"></i> <span class="current">Control de carro</span>
+            <a href="../index.html">Inicio</a> <i class="fas fa-chevron-right"></i> <span>Proyectos</span> <i class="fas fa-chevron-right"></i> <span class="current">Vehículo eléctrico</span>
         </div>
 
         <!-- HERO PROYECTO -->
         <header class="project-hero fade-up">
-            <h1>Control de carro con Arduino</h1>
-            <div class="subtitle">Aplicación móvil para controlar un carro electrónico vía Bluetooth</div>
+            <h1>Vehículo eléctrico con Arduino</h1>
+            <div class="subtitle">Armado de hardware, electrónica y control inalámbrico</div>
             <div class="tech-stack">
-                <span>Flutter</span>
                 <span>Arduino</span>
+                <span>Electrónica</span>
                 <span>Bluetooth</span>
-                <span>IoT</span>
+                <span>Flutter</span>
             </div>
         </header>
 
@@ -55,32 +55,33 @@
         <div class="project-grid fade-up">
             <div class="project-description">
                 <p>
-                    Esta aplicación móvil desarrollada en <strong>Flutter</strong> permite controlar un carro
-                    electrónico construido con <strong>Arduino</strong> a través de una conexión Bluetooth.
-                    La app cuenta con una interfaz intuitiva que incluye una pantalla de selección de
-                    dispositivos Bluetooth disponibles y un control remoto con botones direccionales.
+                    Este proyecto consistió en el <strong>armado de un vehículo eléctrico con Arduino</strong>,
+                    incluyendo la conexión de los componentes electrónicos, el montaje del hardware y la
+                    programación del microcontrolador para controlar el movimiento del vehículo.
                 </p>
                 <p>
-                    El carro está equipado con un módulo Bluetooth HC-05 o HC-06 que recibe los comandos
-                    enviados desde la app. Los movimientos (adelante, atrás, izquierda, derecha y parada)
-                    se transmiten mediante caracteres simples que el Arduino interpreta para accionar los
-                    motores.
+                    Se integraron el chasis, los motores, el driver de motores, el módulo Bluetooth, la batería
+                    y el cableado de alimentación. Cada componente se probó de forma individual y después en
+                    conjunto, verificando el sentido de giro de los motores y la respuesta a los comandos.
                 </p>
                 <p>
-                    Este proyecto combina desarrollo móvil con electrónica y programación de microcontroladores,
-                    ideal para aprender sobre IoT y comunicación inalámbrica.
+                    El Arduino interpreta los comandos recibidos por Bluetooth y acciona los motores para
+                    adelante, atrás, izquierda, derecha y parada. Además se desarrolló una aplicación móvil en
+                    <strong>Flutter</strong> para seleccionar el dispositivo y enviar las instrucciones, integrando
+                    electrónica, programación y comunicación inalámbrica.
                 </p>
             </div>
             <div class="features">
                 <h3>Características principales</h3>
                 <ul>
-                    <li><i class="fas fa-bluetooth-b"></i> Conexión Bluetooth con HC-05/HC-06</li>
-                    <li><i class="fas fa-list"></i> Selección de dispositivo Bluetooth</li>
-                    <li><i class="fas fa-gamepad"></i> Control remoto con botones direccionales</li>
+                    <li><i class="fas fa-screwdriver-wrench"></i> Armado de hardware y chasis</li>
+                    <li><i class="fas fa-microchip"></i> Programación de Arduino</li>
+                    <li><i class="fas fa-bolt"></i> Conexión de componentes electrónicos</li>
+                    <li><i class="fas fa-gears"></i> Control de motores y driver</li>
+                    <li><i class="fas fa-bluetooth-b"></i> Comunicación Bluetooth HC-05/HC-06</li>
+                    <li><i class="fas fa-mobile-screen-button"></i> App móvil Flutter para control remoto</li>
                     <li><i class="fas fa-arrow-up"></i> Movimientos: adelante, atrás, izquierda, derecha</li>
-                    <li><i class="fas fa-stop-circle"></i> Botón de parada de emergencia</li>
-                    <li><i class="fas fa-microchip"></i> Código Arduino para interpretar comandos</li>
-                    <li><i class="fas fa-mobile-alt"></i> Interfaz responsive y minimalista</li>
+                    <li><i class="fas fa-circle-stop"></i> Botón de parada de emergencia</li>
                 </ul>
             </div>
         </div>
@@ -89,17 +90,17 @@
         <section class="gallery fade-up">
             <h2>Capturas de pantalla</h2>
             <div class="gallery-grid">
-                <div class="gallery-item" data-caption="Seleccionar Dispositivo">
-                    <img src="../img/SelectdeviceCArro.png" alt="Seleccionar Dispositivo" loading="lazy" />
-                    <div class="caption">Seleccionar Dispositivo</div>
+                <div class="gallery-item" data-caption="Selección del dispositivo Bluetooth">
+                    <img src="../img/SelectdeviceCArro.png" alt="Selección del dispositivo Bluetooth" loading="lazy" />
+                    <div class="caption">Selección del dispositivo Bluetooth</div>
                 </div>
-                <div class="gallery-item" data-caption="Control Remoto">
-                    <img src="../img/ControlRemeotoCarro.png" alt="Control Remoto" loading="lazy" />
-                    <div class="caption">Control Remoto</div>
+                <div class="gallery-item" data-caption="Control remoto desde la app">
+                    <img src="../img/ControlRemeotoCarro.png" alt="Control remoto desde la app" loading="lazy" />
+                    <div class="caption">Control remoto desde la app</div>
                 </div>
-                <div class="gallery-item" data-caption="Carro Arduino">
-                    <img src="../img/CarroHardware.png" alt="Carro Arduino" loading="lazy" />
-                    <div class="caption">Carro Arduino</div>
+                <div class="gallery-item" data-caption="Hardware del vehículo">
+                    <img src="../img/CarroHardware.png" alt="Hardware del vehículo eléctrico" loading="lazy" />
+                    <div class="caption">Hardware del vehículo</div>
                 </div>
             </div>
         </section>

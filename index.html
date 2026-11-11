@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Erik Tovar · Portafolio</title>
     <meta name="description"
-        content="Portafolio de Erik Tovar Carreón — Estudiante de ISC con proyectos en web, escritorio, móvil, IA y bases de datos." />
+        content="Portafolio de Erik Tovar Carreón — Estudiante de ISC con proyectos de desarrollo, bases de datos, redes, ciberseguridad, móvil e IA." />
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -88,7 +88,7 @@
         <!-- Resumen numérico -->
         <div class="stats-container fade-up" aria-label="Resumen del perfil">
             <div class="stat-box">
-                <span class="stat-num" data-target="7">7</span>
+                <span class="stat-num" data-target="11">11</span>
                 <span class="stat-label">Proyectos</span>
             </div>
             <div class="stat-box">
@@ -145,8 +145,8 @@
             <div class="about-card">
                 <p>
                     Estudiante de 9° semestre de Ingeniería en Sistemas Computacionales con conocimientos en
-                    desarrollo web, programación y bases de datos. Manejo tecnologías como C#, HTML, CSS, JavaScript
-                    y SQL en PostgreSQL y SQL Server. Soy proactivo, responsable y con facilidad para trabajar en
+                    desarrollo web, programación, bases de datos, redes e infraestructura. Manejo tecnologías como C#, HTML, CSS, JavaScript
+                    y SQL en PostgreSQL y SQL Server, además de herramientas de redes y ciberseguridad. Soy proactivo, responsable y con facilidad para trabajar en
                     equipo. Me interesa seguir aprendiendo, mejorar mis habilidades técnicas y aportar soluciones a
                     proyectos reales.
                 </p>
@@ -204,8 +204,14 @@
                                 class="skill-name">Kali Linux</span></span>
                         <span class="skill-tag"><i class="fas fa-search" style="color:#4682B4;"></i> <span
                                 class="skill-name">Nmap</span></span>
-                        <span class="skill-tag"><i class="fas fa-shark" style="color:#1679A7;"></i> <span
+                        <span class="skill-tag"><i class="fas fa-wave-square" style="color:#1679A7;"></i> <span
                                 class="skill-name">Wireshark</span></span>
+                        <span class="skill-tag"><i class="fas fa-crosshairs" style="color:#E34F26;"></i> <span
+                                class="skill-name">Metasploit</span></span>
+                        <span class="skill-tag"><i class="fas fa-globe" style="color:#0b8f7f;"></i> <span
+                                class="skill-name">OSINT</span></span>
+                        <span class="skill-tag"><i class="fas fa-layer-group" style="color:#0099CC;"></i> <span
+                                class="skill-name">VLANs / ACLs</span></span>
                     </div>
                 </div>
                 <div class="card">
@@ -215,6 +221,8 @@
                                 class="skill-name">Windows Server</span></span>
                         <span class="skill-tag"><i class="fab fa-ubuntu" style="color:#E95420;"></i> <span
                                 class="skill-name">Ubuntu Server</span></span>
+                        <span class="skill-tag"><i class="fas fa-drafting-compass" style="color:#0099CC;"></i> <span
+                                class="skill-name">AutoCAD</span></span>
                         <span class="skill-tag"><i class="fas fa-file-word" style="color:#2B579A;"></i> <span
                                 class="skill-name">Word</span></span>
                         <span class="skill-tag"><i class="fas fa-file-excel" style="color:#217346;"></i> <span
@@ -266,7 +274,7 @@
         <section id="projects" class="fade-up">
             <div class="section-head">
                 <span class="index">04</span>
-                <span class="section-title">Proyectos escolares</span>
+                <span class="section-title">Proyectos y prácticas</span>
                 <span class="rule"></span>
             </div>
             <div class="project-filters fade-up">
@@ -276,6 +284,8 @@
                 <button class="filter-btn" data-filter="movil">Móvil</button>
                 <button class="filter-btn" data-filter="ia">IA</button>
                 <button class="filter-btn" data-filter="bd">Bases de Datos</button>
+                <button class="filter-btn" data-filter="redes">Redes</button>
+                <button class="filter-btn" data-filter="ciberseguridad">Ciberseguridad</button>
                 <button class="filter-btn" data-filter="3d">3D</button>
             </div>
             <div class="project-grid" id="projectGrid">
@@ -311,7 +321,8 @@
                     <div class="body">
                         <span class="project-kind"><i class="fas fa-database"></i> Base de datos</span>
                         <h4>Base de datos para cine</h4>
-                        <p>Diseño, creación y administración de BD para sistema de cine en servidor Ubuntu.</p>
+                        <p>Implementación y administración de BD en Ubuntu Server, con control de acceso e integridad de
+                            datos.</p>
                         <div class="stack">
                             <span><i class="fas fa-database" style="color:#336791;"></i> PostgreSQL</span>
                             <span><i class="fab fa-ubuntu" style="color:#E95420;"></i> Ubuntu Server</span>
@@ -384,20 +395,22 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 06: Carro -->
+                <!-- Proyecto 06: Vehículo eléctrico -->
                 <div class="project-card" data-category="movil">
                     <div class="project-thumb" data-image="img/carro.png">
                         <span class="thumb-num">PROYECTO 06</span>
                         <span class="zoom-icon"><i class="fas fa-search-plus"></i></span>
-                        <img src="img/carro.png" alt="Control de carro electrónico" loading="lazy">
+                        <img src="img/carro.png" alt="Vehículo eléctrico con Arduino" loading="lazy">
                     </div>
                     <div class="body">
-                        <span class="project-kind"><i class="fas fa-mobile-alt"></i> Aplicación móvil</span>
-                        <h4>Control de carro electrónico</h4>
-                        <p>Aplicación móvil para controlar un carro electrónico vía Bluetooth con Arduino.</p>
+                        <span class="project-kind"><i class="fas fa-microchip"></i> Hardware · Electrónica · Bluetooth</span>
+                        <h4>Vehículo eléctrico con Arduino</h4>
+                        <p>Armado de hardware, conexión de componentes electrónicos y programación de Arduino para el
+                            control del vehículo.</p>
                         <div class="stack">
-                            <span><i class="fas fa-mobile-alt" style="color:#02569B;"></i> Flutter</span>
                             <span><i class="fas fa-microchip" style="color:#00979D;"></i> Arduino</span>
+                            <span><i class="fas fa-bluetooth-b" style="color:#0082FC;"></i> Bluetooth</span>
+                            <span><i class="fas fa-mobile-alt" style="color:#02569B;"></i> Flutter</span>
                         </div>
                         <a href="pages/carro.html" class="project-link"><i class="fas fa-arrow-right"></i> Ver
                             proyecto</a>
@@ -422,6 +435,96 @@
                             <span><i class="fas fa-map-location-dot" style="color:#34A853;"></i> GPS</span>
                         </div>
                         <a href="pages/fittrack.html" class="project-link"><i class="fas fa-arrow-right"></i> Ver
+                            proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 08: Laboratorio de cómputo -->
+                <div class="project-card" data-category="redes">
+                    <div class="project-thumb" data-image="img/lab-computo.svg">
+                        <span class="thumb-num">PROYECTO 08</span>
+                        <span class="zoom-icon"><i class="fas fa-search-plus"></i></span>
+                        <img src="img/lab-computo.svg" alt="Instalación de laboratorio de cómputo" loading="lazy">
+                    </div>
+                    <div class="body">
+                        <span class="project-kind"><i class="fas fa-screwdriver-wrench"></i> Soporte técnico · Hardware · Redes</span>
+                        <h4>Laboratorio de cómputo</h4>
+                        <p>Instalación y configuración de equipos para el laboratorio de Contaduría, con conexión y
+                            organización del cableado de red.</p>
+                        <div class="stack">
+                            <span><i class="fas fa-microchip" style="color:var(--signal);"></i> Hardware</span>
+                            <span><i class="fas fa-network-wired" style="color:#0099CC;"></i> Redes</span>
+                            <span><i class="fas fa-headset" style="color:var(--pink);"></i> Soporte</span>
+                        </div>
+                        <a href="pages/laboratorio.html" class="project-link"><i class="fas fa-arrow-right"></i> Ver
+                            proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 09: Cableado de red -->
+                <div class="project-card" data-category="redes">
+                    <div class="project-thumb" data-image="img/cableado-red.svg">
+                        <span class="thumb-num">PROYECTO 09</span>
+                        <span class="zoom-icon"><i class="fas fa-search-plus"></i></span>
+                        <img src="img/cableado-red.svg" alt="Instalación de cableado de red" loading="lazy">
+                    </div>
+                    <div class="body">
+                        <span class="project-kind"><i class="fas fa-network-wired"></i> Redes · Infraestructura TI</span>
+                        <h4>Cableado de red · Educación a Distancia</h4>
+                        <p>Instalación y organización del cableado de red para habilitar la conectividad de un nuevo
+                            departamento académico.</p>
+                        <div class="stack">
+                            <span><i class="fas fa-ethernet" style="color:var(--signal);"></i> Cableado</span>
+                            <span><i class="fas fa-plug" style="color:#0099CC;"></i> RJ45</span>
+                            <span><i class="fas fa-network-wired" style="color:var(--pink);"></i> Switch</span>
+                        </div>
+                        <a href="pages/cableado.html" class="project-link"><i class="fas fa-arrow-right"></i> Ver
+                            proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 10: Ciberseguridad -->
+                <div class="project-card" data-category="ciberseguridad redes">
+                    <div class="project-thumb" data-image="img/ciberseguridad-lab.svg">
+                        <span class="thumb-num">PROYECTO 10</span>
+                        <span class="zoom-icon"><i class="fas fa-search-plus"></i></span>
+                        <img src="img/ciberseguridad-lab.svg" alt="Laboratorios de ciberseguridad" loading="lazy">
+                    </div>
+                    <div class="body">
+                        <span class="project-kind"><i class="fas fa-shield-halved"></i> Ciberseguridad · Laboratorio</span>
+                        <h4>Laboratorios de ciberseguridad</h4>
+                        <p>Reconocimiento de redes, análisis de tráfico y pruebas de seguridad controladas con Kali
+                            Linux y Windows Server.</p>
+                        <div class="stack">
+                            <span><i class="fab fa-linux" style="color:#FCC624;"></i> Kali Linux</span>
+                            <span><i class="fas fa-crosshairs" style="color:#E34F26;"></i> Metasploit</span>
+                            <span><i class="fas fa-search" style="color:#4682B4;"></i> Nmap</span>
+                            <span><i class="fas fa-wave-square" style="color:#1679A7;"></i> Wireshark</span>
+                        </div>
+                        <a href="pages/ciberseguridad.html" class="project-link"><i class="fas fa-arrow-right"></i> Ver
+                            proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 11: Clínica -->
+                <div class="project-card" data-category="redes ciberseguridad">
+                    <div class="project-thumb" data-image="img/red-clinica.svg">
+                        <span class="thumb-num">PROYECTO 11</span>
+                        <span class="zoom-icon"><i class="fas fa-search-plus"></i></span>
+                        <img src="img/red-clinica.svg" alt="Red segmentada para clínica médica" loading="lazy">
+                    </div>
+                    <div class="body">
+                        <span class="project-kind"><i class="fas fa-network-wired"></i> Redes · Seguridad</span>
+                        <h4>Red segmentada para clínica médica</h4>
+                        <p>Diseño de plano y simulación de red con VLANs, ACLs, seguridad de capa 2 y cableado
+                            estructurado.</p>
+                        <div class="stack">
+                            <span><i class="fas fa-network-wired" style="color:#0099CC;"></i> Packet Tracer</span>
+                            <span><i class="fas fa-layer-group" style="color:var(--signal);"></i> VLANs</span>
+                            <span><i class="fas fa-shield-halved" style="color:var(--pink);"></i> ACLs</span>
+                            <span><i class="fas fa-drafting-compass" style="color:#E34F26;"></i> AutoCAD</span>
+                        </div>
+                        <a href="pages/clinica.html" class="project-link"><i class="fas fa-arrow-right"></i> Ver
                             proyecto</a>
                     </div>
                 </div>

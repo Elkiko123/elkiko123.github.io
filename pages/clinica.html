@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red segmentada para clínica médica · Erik Tovar</title>
+    <meta name="description" content="Diseño de plano y simulación de red para clínica médica con VLANs, ACLs, seguridad de capa 2 y cableado estructurado." />
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/project.css" />
+</head>
+<body>
+    <div id="readProgress" class="read-progress"></div>
+    <div class="container">
+
+        <!-- NAVBAR -->
+        <nav class="navbar" id="navbar">
+            <div class="logo"><span class="dot"></span><strong>erik</strong>tovar<span style="color:var(--text-2)">.dev</span></div>
+            <div class="nav-right">
+                <a href="../index.html" class="btn-back"><i class="fas fa-arrow-left"></i> Volver</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar a modo claro/oscuro">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- BREADCRUMB -->
+        <div class="breadcrumb fade-up">
+            <a href="../index.html">Inicio</a> <i class="fas fa-chevron-right"></i> <span>Proyectos</span> <i class="fas fa-chevron-right"></i> <span class="current">Red para clínica</span>
+        </div>
+
+        <!-- HERO PROYECTO -->
+        <header class="project-hero fade-up">
+            <h1>Red segmentada para clínica médica</h1>
+            <div class="subtitle">Diseño de plano y simulación de infraestructura de red</div>
+            <div class="tech-stack">
+                <span>Cisco Packet Tracer</span>
+                <span>VLANs</span>
+                <span>ACLs</span>
+                <span>ANSI/TIA-568</span>
+                <span>AutoCAD</span>
+            </div>
+        </header>
+
+        <!-- DESCRIPCIÓN Y CARACTERÍSTICAS -->
+        <div class="project-grid fade-up">
+            <div class="project-description">
+                <p>
+                    <strong>Diseño de plano y simulación de infraestructura de red</strong> para una clínica médica
+                    en Cisco Packet Tracer, considerando la segmentación de las áreas mediante VLANs, el control
+                    del tráfico con ACLs y criterios de seguridad de capa 2.
+                </p>
+                <p>
+                    La propuesta separa las áreas de recepción y sala de espera, consultorios y laboratorio,
+                    administración y farmacia en segmentos independientes. Las ACLs permiten controlar la
+                    comunicación entre estos segmentos y proteger la información de cada área.
+                </p>
+                <p>
+                    El plano arquitectónico se elaboró en <strong>AutoCAD</strong> y la topología se simuló en
+                    <strong>Packet Tracer</strong>. Se consideraron prácticas de cableado estructurado conforme a
+                    ANSI/TIA-568, además de port security y documentación de la red.
+                </p>
+            </div>
+            <div class="features">
+                <h3>Características del diseño</h3>
+                <ul>
+                    <li><i class="fas fa-drafting-compass"></i> Plano arquitectónico en AutoCAD</li>
+                    <li><i class="fas fa-network-wired"></i> Topología simulada en Cisco Packet Tracer</li>
+                    <li><i class="fas fa-layer-group"></i> Segmentación por VLANs</li>
+                    <li><i class="fas fa-shield-halved"></i> ACLs entre segmentos</li>
+                    <li><i class="fas fa-ethernet"></i> Seguridad de capa 2 y port security</li>
+                    <li><i class="fas fa-server"></i> Cableado estructurado ANSI/TIA-568</li>
+                    <li><i class="fas fa-list-check"></i> Direccionamiento y documentación</li>
+                    <li><i class="fas fa-circle-check"></i> Pruebas de conectividad en simulación</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- DIAGRAMA -->
+        <section class="gallery fade-up">
+            <h2>Plano y topología</h2>
+            <div class="gallery-grid diagram-grid">
+                <div class="gallery-item" data-caption="Plano de la clínica y topología segmentada">
+                    <img src="../img/red-clinica.svg" alt="Plano de clínica con áreas segmentadas por VLAN y topología de red" loading="lazy" />
+                    <div class="caption">Plano de la clínica y topología segmentada</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VOLVER AL PORTFOLIO -->
+        <div class="back-to-portfolio fade-up">
+            <a href="../index.html"><i class="fas fa-arrow-left"></i> Volver al portafolio</a>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <span>© 2026 Erik Tovar · <i class="fas fa-code"></i> con <span style="color:var(--pink);"><i class="fas fa-heart"></i></span></span>
+        </footer>
+
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vista ampliada de imagen" aria-hidden="true">
+        <div class="lightbox-figure">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar"><i class="fas fa-times"></i></button>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Imagen anterior"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Imagen siguiente"><i class="fas fa-chevron-right"></i></button>
+            <img id="lightboxImg" src="" alt="Vista ampliada" />
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Elementos flotantes interactivos -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+    <button id="scrollTopBtn" class="scroll-top" aria-label="Volver arriba"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="../js/orb.js"></script>
+    <script src="../js/project.js"></script>
+</body>
+</html>

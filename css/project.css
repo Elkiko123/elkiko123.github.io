@@ -453,6 +453,19 @@ a:hover { opacity: 0.86; }
     object-fit: contain;
     padding: 0.75rem;
 }
+/* Galería de diagramas técnicos: una imagen amplia y centrada */
+.gallery-grid.diagram-grid {
+    grid-template-columns: 1fr;
+}
+.gallery-grid.diagram-grid .gallery-item img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0.9rem;
+    object-fit: contain;
+    background: var(--bg-2);
+}
 .gallery-item {
     position: relative;
     background-color: var(--bg-1);

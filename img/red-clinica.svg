@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Diseño de red segmentada para clínica médica</title>
+  <desc id="desc">Plano de una clínica con áreas segmentadas por VLAN y topología de red simulada.</desc>
+  <defs>
+    <radialGradient id="bg" cx="78%" cy="0%" r="95%">
+      <stop offset="0" stop-color="#0a3733"/>
+      <stop offset="0.55" stop-color="#042321"/>
+      <stop offset="1" stop-color="#021817"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#0e3f3a" stroke-width="1"/>
+    </pattern>
+    <pattern id="floor" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#0d3b37" stroke-width="0.8"/>
+    </pattern>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="42"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="#031f1d"/>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#grid)" opacity="0.32"/>
+  <circle cx="110" cy="660" r="160" fill="#7a3d78" opacity="0.12" filter="url(#soft)"/>
+  <circle cx="1080" cy="280" r="150" fill="#0b5d56" opacity="0.2" filter="url(#soft)"/>
+
+  <!-- Header -->
+  <circle cx="66" cy="40" r="5" fill="#7ef2e0"/>
+  <text x="84" y="45" font-family="'JetBrains Mono', Consolas, monospace" font-size="14" letter-spacing="2.4" fill="#d9fffa">CLÍNICA · RED SEGMENTADA</text>
+  <text x="1136" y="45" text-anchor="end" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" letter-spacing="1.8" fill="#4f948b">PACKET TRACER · ANSI/TIA-568</text>
+  <line x1="60" y1="68" x2="1140" y2="68" stroke="#12443f"/>
+
+  <!-- Floor plan -->
+  <text x="70" y="100" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="2" fill="#4f948b">PLANO ARQUITECTÓNICO · NIVEL 01</text>
+  <rect x="60" y="118" width="780" height="490" rx="10" fill="#04211f" stroke="#1a5a54" stroke-width="2"/>
+  <rect x="60" y="118" width="780" height="490" rx="10" fill="url(#floor)" opacity="0.5"/>
+
+  <!-- Rooms: top row -->
+  <rect x="60" y="118" width="250" height="230" fill="#7ef2e0" opacity="0.055"/>
+  <rect x="310" y="118" width="270" height="230" fill="#9fe8ff" opacity="0.055"/>
+  <rect x="580" y="118" width="260" height="230" fill="#9fe8ff" opacity="0.045"/>
+  <!-- Rooms: bottom row -->
+  <rect x="60" y="348" width="250" height="260" fill="#f6c9ff" opacity="0.05"/>
+  <rect x="310" y="348" width="270" height="260" fill="#ffd9b0" opacity="0.045"/>
+  <rect x="580" y="348" width="260" height="260" fill="#7ef2e0" opacity="0.045"/>
+
+  <!-- Walls -->
+  <g stroke="#1a5a54" stroke-width="2">
+    <path d="M60 348H840M310 118V608M580 118V608"/>
+  </g>
+
+  <!-- Room labels -->
+  <g font-family="'JetBrains Mono', Consolas, monospace">
+    <text x="82" y="150" font-size="12" letter-spacing="1.6" fill="#7ef2e0">RECEPCIÓN</text>
+    <text x="82" y="168" font-size="9" letter-spacing="1.2" fill="#4f948b">VLAN PÚBLICA</text>
+    <text x="332" y="150" font-size="12" letter-spacing="1.6" fill="#9fe8ff">CONSULTORIOS</text>
+    <text x="332" y="168" font-size="9" letter-spacing="1.2" fill="#4f948b">VLAN CLÍNICA</text>
+    <text x="602" y="150" font-size="12" letter-spacing="1.6" fill="#9fe8ff">LABORATORIO</text>
+    <text x="602" y="168" font-size="9" letter-spacing="1.2" fill="#4f948b">VLAN CLÍNICA</text>
+    <text x="82" y="380" font-size="12" letter-spacing="1.6" fill="#f6c9ff">ADMINISTRACIÓN</text>
+    <text x="82" y="398" font-size="9" letter-spacing="1.2" fill="#4f948b">VLAN ADMIN</text>
+    <text x="332" y="380" font-size="12" letter-spacing="1.6" fill="#ffd9b0">FARMACIA</text>
+    <text x="332" y="398" font-size="9" letter-spacing="1.2" fill="#4f948b">VLAN FARMACIA</text>
+    <text x="602" y="380" font-size="12" letter-spacing="1.6" fill="#7ef2e0">SALA DE ESPERA</text>
+    <text x="602" y="398" font-size="9" letter-spacing="1.2" fill="#4f948b">VLAN PÚBLICA</text>
+  </g>
+
+  <!-- Reception desk -->
+  <path d="M100 236H210V264H100Z" fill="#0a3a35" stroke="#1f6a61"/>
+  <rect x="112" y="244" width="34" height="8" rx="2" fill="#7ef2e0" opacity="0.5"/>
+  <circle cx="180" cy="252" r="8" fill="none" stroke="#2b756c"/>
+  <!-- Waiting chairs -->
+  <g fill="#0a3a35" stroke="#1f6a61">
+    <rect x="620" y="480" width="26" height="26" rx="4"/><rect x="656" y="480" width="26" height="26" rx="4"/><rect x="692" y="480" width="26" height="26" rx="4"/><rect x="728" y="480" width="26" height="26" rx="4"/>
+  </g>
+  <!-- Consult beds -->
+  <g fill="#0a3a35" stroke="#1f6a61">
+    <rect x="352" y="230" width="86" height="34" rx="5"/><rect x="450" y="230" width="86" height="34" rx="5"/>
+    <rect x="352" y="290" width="86" height="34" rx="5"/><rect x="450" y="290" width="86" height="34" rx="5"/>
+  </g>
+  <g stroke="#2b756c" stroke-width="1.2">
+    <path d="M360 238H430M360 298H430M458 238H528M458 298H528"/>
+  </g>
+  <!-- Lab benches -->
+  <g fill="#0a3a35" stroke="#1f6a61">
+    <rect x="612" y="210" width="190" height="22" rx="3"/>
+    <rect x="612" y="258" width="190" height="22" rx="3"/>
+  </g>
+  <g fill="#7ef2e0" opacity="0.5">
+    <circle cx="630" cy="221" r="4"/><circle cx="650" cy="221" r="4"/><circle cx="670" cy="221" r="4"/>
+    <circle cx="630" cy="269" r="4"/><circle cx="650" cy="269" r="4"/>
+  </g>
+  <!-- Pharmacy shelves -->
+  <g fill="#0a3a35" stroke="#1f6a61">
+    <rect x="352" y="460" width="190" height="16" rx="2"/><rect x="352" y="492" width="190" height="16" rx="2"/><rect x="352" y="524" width="190" height="16" rx="2"/>
+  </g>
+  <g fill="#ffd9b0" opacity="0.55">
+    <rect x="364" y="465" width="10" height="6" rx="1"/><rect x="382" y="465" width="10" height="6" rx="1"/><rect x="400" y="465" width="10" height="6" rx="1"/>
+    <rect x="364" y="497" width="10" height="6" rx="1"/><rect x="382" y="497" width="10" height="6" rx="1"/>
+  </g>
+  <!-- Admin desks -->
+  <g fill="#0a3a35" stroke="#1f6a61">
+    <rect x="96" y="474" width="120" height="22" rx="3"/><rect x="96" y="520" width="120" height="22" rx="3"/>
+  </g>
+  <rect x="136" y="484" width="38" height="4" rx="2" fill="#f6c9ff" opacity="0.5"/>
+  <rect x="136" y="530" width="38" height="4" rx="2" fill="#f6c9ff" opacity="0.5"/>
+
+  <!-- Floor network drops -->
+  <g fill="none" stroke="#1f6a61" stroke-width="1.2" stroke-dasharray="3 4">
+    <path d="M250 250H310M460 250H580M250 470H310M460 470H580"/>
+  </g>
+  <g fill="#7ef2e0">
+    <circle cx="250" cy="250" r="3"/><circle cx="580" cy="250" r="3"/><circle cx="250" cy="470" r="3"/><circle cx="580" cy="470" r="3"/>
+  </g>
+
+  <!-- Topology panel -->
+  <rect x="875" y="118" width="265" height="490" rx="12" fill="#042421" stroke="#15544d"/>
+  <text x="895" y="146" font-family="'JetBrains Mono', monospace" font-size="11" letter-spacing="1.8" fill="#7ef2e0">TOPOLOGÍA</text>
+  <text x="895" y="164" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="1.2" fill="#4f948b">ROUTER → CORE → ACCESS</text>
+
+  <!-- Router -->
+  <circle cx="1007" cy="206" r="22" fill="#062b28" stroke="#7ef2e0"/>
+  <path d="M997 206H1017M1007 196V216M1000 199L1014 213M1014 199L1000 213" stroke="#7ef2e0" stroke-width="1.4"/>
+  <text x="1040" y="203" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="1" fill="#b8e8e1">ROUTER</text>
+  <text x="1040" y="217" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1" fill="#4f948b">GATEWAY</text>
+
+  <path d="M1007 228V268" stroke="#2b756c" stroke-width="1.5"/>
+
+  <!-- Core switch -->
+  <rect x="947" y="268" width="120" height="50" rx="6" fill="#062b28" stroke="#f6c9ff"/>
+  <text x="1007" y="290" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="1.2" fill="#f6c9ff">CORE SWITCH</text>
+  <text x="1007" y="305" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1" fill="#4f948b">L3 · ACL</text>
+
+  <!-- Access nodes -->
+  <path d="M1007 318V340H882V523" fill="none" stroke="#2b756c" stroke-width="1.5"/>
+  <path d="M882 373H900M882 421H900M882 469H900M882 517H900" stroke="#2b756c" stroke-width="1.5"/>
+
+  <g>
+    <rect x="900" y="352" width="220" height="42" rx="5" fill="#062b28" stroke="#1a5a54"/>
+    <circle cx="916" cy="373" r="3" fill="#7ef2e0"/>
+    <text x="928" y="369" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="1" fill="#b8e8e1">VLAN PÚBLICA</text>
+    <text x="928" y="383" font-family="'JetBrains Mono', monospace" font-size="7.5" letter-spacing="1" fill="#4f948b">SW-01 · PORT SECURITY</text>
+  </g>
+  <g>
+    <rect x="900" y="400" width="220" height="42" rx="5" fill="#062b28" stroke="#1a5a54"/>
+    <circle cx="916" cy="421" r="3" fill="#9fe8ff"/>
+    <text x="928" y="417" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="1" fill="#b8e8e1">VLAN CLÍNICA</text>
+    <text x="928" y="431" font-family="'JetBrains Mono', monospace" font-size="7.5" letter-spacing="1" fill="#4f948b">SW-02 · ACL</text>
+  </g>
+  <g>
+    <rect x="900" y="448" width="220" height="42" rx="5" fill="#062b28" stroke="#1a5a54"/>
+    <circle cx="916" cy="469" r="3" fill="#f6c9ff"/>
+    <text x="928" y="465" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="1" fill="#b8e8e1">VLAN ADMIN</text>
+    <text x="928" y="479" font-family="'JetBrains Mono', monospace" font-size="7.5" letter-spacing="1" fill="#4f948b">SW-03 · ACL</text>
+  </g>
+  <g>
+    <rect x="900" y="496" width="220" height="42" rx="5" fill="#062b28" stroke="#1a5a54"/>
+    <circle cx="916" cy="517" r="3" fill="#ffd9b0"/>
+    <text x="928" y="513" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="1" fill="#b8e8e1">VLAN FARMACIA</text>
+    <text x="928" y="527" font-family="'JetBrains Mono', monospace" font-size="7.5" letter-spacing="1" fill="#4f948b">SW-04 · ACL</text>
+  </g>
+
+  <!-- Security badges -->
+  <g font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1">
+    <rect x="895" y="574" width="76" height="22" rx="11" fill="#052a27" stroke="#15544d"/>
+    <text x="933" y="589" text-anchor="middle" fill="#7ef2e0">VLANs</text>
+    <rect x="981" y="574" width="66" height="22" rx="11" fill="#052a27" stroke="#15544d"/>
+    <text x="1014" y="589" text-anchor="middle" fill="#7ef2e0">ACLs</text>
+    <rect x="1057" y="574" width="62" height="22" rx="11" fill="#052a27" stroke="#15544d"/>
+    <text x="1088" y="589" text-anchor="middle" fill="#7ef2e0">802.1Q</text>
+  </g>
+
+  <!-- Bottom legend -->
+  <g font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1.4">
+    <rect x="70" y="650" width="170" height="38" rx="19" fill="#052a27" stroke="#15544d"/>
+    <circle cx="92" cy="669" r="4" fill="#7ef2e0"/>
+    <text x="104" y="673" fill="#b8e8e1">SEGMENTACIÓN</text>
+    <rect x="254" y="650" width="132" height="38" rx="19" fill="#052a27" stroke="#15544d"/>
+    <circle cx="276" cy="669" r="4" fill="#f6c9ff"/>
+    <text x="288" y="673" fill="#b8e8e1">ACL / L2</text>
+    <rect x="400" y="650" width="202" height="38" rx="19" fill="#052a27" stroke="#15544d"/>
+    <circle cx="422" cy="669" r="4" fill="#9fe8ff"/>
+    <text x="434" y="673" fill="#b8e8e1">TIA-568 · CAT6</text>
+  </g>
+  <g>
+    <circle cx="874" cy="669" r="4" fill="#7ef2e0"/>
+    <text x="888" y="673" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1.4" fill="#7ef2e0">TOPOLOGÍA SIMULADA</text>
+  </g>
+</svg>

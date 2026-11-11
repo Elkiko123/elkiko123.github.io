@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Instalación de laboratorio de cómputo</title>
+  <desc id="desc">Diagrama de estaciones de cómputo conectadas a un rack de comunicaciones.</desc>
+  <defs>
+    <radialGradient id="bg" cx="78%" cy="8%" r="95%">
+      <stop offset="0" stop-color="#0a3b36"/>
+      <stop offset="0.55" stop-color="#042422"/>
+      <stop offset="1" stop-color="#021817"/>
+    </radialGradient>
+    <linearGradient id="aurora" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00827c"/>
+      <stop offset="0.55" stop-color="#7ef2e0"/>
+      <stop offset="1" stop-color="#f6c9ff"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#07332f"/>
+      <stop offset="1" stop-color="#04211f"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#0e3f3a" stroke-width="1"/>
+    </pattern>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="38"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="#031f1d"/>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#grid)" opacity="0.34"/>
+  <circle cx="1010" cy="90" r="130" fill="#0e6d63" opacity="0.28" filter="url(#soft)"/>
+  <circle cx="120" cy="700" r="150" fill="#7a3d78" opacity="0.12" filter="url(#soft)"/>
+
+  <!-- Header -->
+  <circle cx="66" cy="40" r="5" fill="#7ef2e0"/>
+  <text x="84" y="45" font-family="'JetBrains Mono', Consolas, monospace" font-size="14" letter-spacing="2.4" fill="#d9fffa">LABORATORIO DE CÓMPUTO</text>
+  <text x="1136" y="45" text-anchor="end" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" letter-spacing="2" fill="#4f948b">CONTADURÍA</text>
+  <line x1="60" y1="68" x2="1140" y2="68" stroke="#12443f"/>
+
+  <!-- Network backbone -->
+  <path d="M835 130V615" stroke="#14544e" stroke-width="2" stroke-dasharray="5 7"/>
+  <path d="M290 233H835M520 233H835M750 233H835M290 483H835M520 483H835M750 483H835" stroke="#1b6159" stroke-width="1.4" opacity="0.8"/>
+  <path d="M835 300H875" stroke="#7ef2e0" stroke-width="1.8" stroke-dasharray="4 5" opacity="0.8"/>
+  <circle cx="835" cy="233" r="4" fill="#7ef2e0"/>
+  <circle cx="835" cy="483" r="4" fill="#7ef2e0"/>
+  <circle cx="835" cy="300" r="5" fill="#f6c9ff"/>
+
+  <g transform="translate(0 40)">
+  <!-- Workstations row 1 -->
+  <g>
+    <rect x="70" y="145" width="220" height="10" rx="3" fill="#0a3a35"/>
+    <rect x="95" y="35" width="170" height="108" rx="8" fill="#052a27" stroke="#1d615a"/>
+    <rect x="103" y="43" width="154" height="84" rx="4" fill="url(#screen)" stroke="#0e423d"/>
+    <rect x="103" y="43" width="154" height="18" rx="4" fill="#0d4a44"/>
+    <circle cx="113" cy="52" r="2.5" fill="#7ef2e0"/>
+    <circle cx="122" cy="52" r="2.5" fill="#f6c9ff" opacity="0.8"/>
+    <rect x="132" y="48" width="54" height="8" rx="2" fill="#1b615a"/>
+    <path d="M111 72H211M111 86H249M111 100H195M111 114H239" stroke="#1f6a61" stroke-width="2"/>
+    <path d="M111 72H154" stroke="#7ef2e0" stroke-width="2"/>
+    <path d="M111 86H137" stroke="#f6c9ff" stroke-width="2"/>
+    <path d="M111 100H162" stroke="#7ef2e0" stroke-opacity="0.6" stroke-width="2"/>
+    <rect x="96" y="143" width="28" height="12" fill="#0d4a44"/>
+    <rect x="78" y="153" width="64" height="5" rx="2" fill="#0d4a44"/>
+    <rect x="115" y="166" width="110" height="20" rx="4" fill="#0b3d38" stroke="#1a5a54"/>
+    <path d="M127 174H213" stroke="#1f6a61" stroke-width="1.4"/>
+    <path d="M127 180H197" stroke="#1f6a61" stroke-width="1.4"/>
+    <text x="30" y="140" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1.5" fill="#4f948b">EST 01</text>
+  </g>
+  <g transform="translate(230 0)">
+    <rect x="70" y="145" width="220" height="10" rx="3" fill="#0a3a35"/>
+    <rect x="95" y="35" width="170" height="108" rx="8" fill="#052a27" stroke="#1d615a"/>
+    <rect x="103" y="43" width="154" height="84" rx="4" fill="url(#screen)" stroke="#0e423d"/>
+    <rect x="103" y="43" width="154" height="18" rx="4" fill="#0d4a44"/>
+    <circle cx="113" cy="52" r="2.5" fill="#7ef2e0"/>
+    <circle cx="122" cy="52" r="2.5" fill="#f6c9ff" opacity="0.8"/>
+    <rect x="132" y="48" width="54" height="8" rx="2" fill="#1b615a"/>
+    <path d="M111 72H211M111 86H249M111 100H195M111 114H239" stroke="#1f6a61" stroke-width="2"/>
+    <path d="M111 72H145" stroke="#7ef2e0" stroke-width="2"/>
+    <path d="M111 86H166" stroke="#f6c9ff" stroke-width="2"/>
+    <rect x="96" y="143" width="28" height="12" fill="#0d4a44"/>
+    <rect x="78" y="153" width="64" height="5" rx="2" fill="#0d4a44"/>
+    <rect x="115" y="166" width="110" height="20" rx="4" fill="#0b3d38" stroke="#1a5a54"/>
+    <path d="M127 174H213" stroke="#1f6a61" stroke-width="1.4"/>
+    <path d="M127 180H197" stroke="#1f6a61" stroke-width="1.4"/>
+    <text x="30" y="140" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1.5" fill="#4f948b">EST 02</text>
+  </g>
+  <g transform="translate(460 0)">
+    <rect x="70" y="145" width="220" height="10" rx="3" fill="#0a3a35"/>
+    <rect x="95" y="35" width="170" height="108" rx="8" fill="#052a27" stroke="#1d615a"/>
+    <rect x="103" y="43" width="154" height="84" rx="4" fill="url(#screen)" stroke="#0e423d"/>
+    <rect x="103" y="43" width="154" height="18" rx="4" fill="#0d4a44"/>
+    <circle cx="113" cy="52" r="2.5" fill="#7ef2e0"/>
+    <circle cx="122" cy="52" r="2.5" fill="#f6c9ff" opacity="0.8"/>
+    <rect x="132" y="48" width="54" height="8" rx="2" fill="#1b615a"/>
+    <path d="M111 72H211M111 86H249M111 100H195M111 114H239" stroke="#1f6a61" stroke-width="2"/>
+    <path d="M111 72H178" stroke="#7ef2e0" stroke-width="2"/>
+    <path d="M111 100H153" stroke="#f6c9ff" stroke-width="2"/>
+    <rect x="96" y="143" width="28" height="12" fill="#0d4a44"/>
+    <rect x="78" y="153" width="64" height="5" rx="2" fill="#0d4a44"/>
+    <rect x="115" y="166" width="110" height="20" rx="4" fill="#0b3d38" stroke="#1a5a54"/>
+    <path d="M127 174H213" stroke="#1f6a61" stroke-width="1.4"/>
+    <path d="M127 180H197" stroke="#1f6a61" stroke-width="1.4"/>
+    <text x="30" y="140" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1.5" fill="#4f948b">EST 03</text>
+  </g>
+
+  <!-- Workstations row 2 -->
+  <g transform="translate(0 250)">
+    <rect x="70" y="145" width="220" height="10" rx="3" fill="#0a3a35"/>
+    <rect x="95" y="35" width="170" height="108" rx="8" fill="#052a27" stroke="#1d615a"/>
+    <rect x="103" y="43" width="154" height="84" rx="4" fill="url(#screen)" stroke="#0e423d"/>
+    <rect x="103" y="43" width="154" height="18" rx="4" fill="#0d4a44"/>
+    <circle cx="113" cy="52" r="2.5" fill="#7ef2e0"/>
+    <circle cx="122" cy="52" r="2.5" fill="#f6c9ff" opacity="0.8"/>
+    <rect x="132" y="48" width="54" height="8" rx="2" fill="#1b615a"/>
+    <path d="M111 72H211M111 86H249M111 100H195M111 114H239" stroke="#1f6a61" stroke-width="2"/>
+    <path d="M111 86H193" stroke="#7ef2e0" stroke-width="2"/>
+    <path d="M111 100H141" stroke="#f6c9ff" stroke-width="2"/>
+    <rect x="96" y="143" width="28" height="12" fill="#0d4a44"/>
+    <rect x="78" y="153" width="64" height="5" rx="2" fill="#0d4a44"/>
+    <rect x="115" y="166" width="110" height="20" rx="4" fill="#0b3d38" stroke="#1a5a54"/>
+    <path d="M127 174H213" stroke="#1f6a61" stroke-width="1.4"/>
+    <path d="M127 180H197" stroke="#1f6a61" stroke-width="1.4"/>
+    <text x="30" y="140" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1.5" fill="#4f948b">EST 04</text>
+  </g>
+  <g transform="translate(230 250)">
+    <rect x="70" y="145" width="220" height="10" rx="3" fill="#0a3a35"/>
+    <rect x="95" y="35" width="170" height="108" rx="8" fill="#052a27" stroke="#1d615a"/>
+    <rect x="103" y="43" width="154" height="84" rx="4" fill="url(#screen)" stroke="#0e423d"/>
+    <rect x="103" y="43" width="154" height="18" rx="4" fill="#0d4a44"/>
+    <circle cx="113" cy="52" r="2.5" fill="#7ef2e0"/>
+    <circle cx="122" cy="52" r="2.5" fill="#f6c9ff" opacity="0.8"/>
+    <rect x="132" y="48" width="54" height="8" rx="2" fill="#1b615a"/>
+    <path d="M111 72H211M111 86H249M111 100H195M111 114H239" stroke="#1f6a61" stroke-width="2"/>
+    <path d="M111 72H166" stroke="#7ef2e0" stroke-width="2"/>
+    <path d="M111 114H211" stroke="#f6c9ff" stroke-width="2"/>
+    <rect x="96" y="143" width="28" height="12" fill="#0d4a44"/>
+    <rect x="78" y="153" width="64" height="5" rx="2" fill="#0d4a44"/>
+    <rect x="115" y="166" width="110" height="20" rx="4" fill="#0b3d38" stroke="#1a5a54"/>
+    <path d="M127 174H213" stroke="#1f6a61" stroke-width="1.4"/>
+    <path d="M127 180H197" stroke="#1f6a61" stroke-width="1.4"/>
+    <text x="30" y="140" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1.5" fill="#4f948b">EST 05</text>
+  </g>
+  <g transform="translate(460 250)">
+    <rect x="70" y="145" width="220" height="10" rx="3" fill="#0a3a35"/>
+    <rect x="95" y="35" width="170" height="108" rx="8" fill="#052a27" stroke="#1d615a"/>
+    <rect x="103" y="43" width="154" height="84" rx="4" fill="url(#screen)" stroke="#0e423d"/>
+    <rect x="103" y="43" width="154" height="18" rx="4" fill="#0d4a44"/>
+    <circle cx="113" cy="52" r="2.5" fill="#7ef2e0"/>
+    <circle cx="122" cy="52" r="2.5" fill="#f6c9ff" opacity="0.8"/>
+    <rect x="132" y="48" width="54" height="8" rx="2" fill="#1b615a"/>
+    <path d="M111 72H211M111 86H249M111 100H195M111 114H239" stroke="#1f6a61" stroke-width="2"/>
+    <path d="M111 72H149" stroke="#7ef2e0" stroke-width="2"/>
+    <path d="M111 86H209" stroke="#f6c9ff" stroke-width="2"/>
+    <path d="M111 100H185" stroke="#7ef2e0" stroke-opacity="0.6" stroke-width="2"/>
+    <rect x="96" y="143" width="28" height="12" fill="#0d4a44"/>
+    <rect x="78" y="153" width="64" height="5" rx="2" fill="#0d4a44"/>
+    <rect x="115" y="166" width="110" height="20" rx="4" fill="#0b3d38" stroke="#1a5a54"/>
+    <path d="M127 174H213" stroke="#1f6a61" stroke-width="1.4"/>
+    <path d="M127 180H197" stroke="#1f6a61" stroke-width="1.4"/>
+    <text x="30" y="140" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1.5" fill="#4f948b">EST 06</text>
+  </g>
+  </g>
+
+  <!-- Rack -->
+  <rect x="875" y="120" width="255" height="500" rx="14" fill="#042421" stroke="#15544d"/>
+  <text x="895" y="150" font-family="'JetBrains Mono', monospace" font-size="11" letter-spacing="2" fill="#4f948b">RACK DE COMUNICACIONES</text>
+  <rect x="891" y="166" width="10" height="434" rx="5" fill="#08312d"/>
+
+  <g>
+    <rect x="910" y="170" width="200" height="88" rx="6" fill="#062b28" stroke="#1a5a54"/>
+    <text x="922" y="190" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1.4" fill="#d9fffa">SWITCH 24P</text>
+    <g fill="#0d4a44" stroke="#1f6a61">
+      <rect x="922" y="202" width="9" height="12"/><rect x="936" y="202" width="9" height="12"/><rect x="950" y="202" width="9" height="12"/><rect x="964" y="202" width="9" height="12"/><rect x="978" y="202" width="9" height="12"/><rect x="992" y="202" width="9" height="12"/><rect x="1006" y="202" width="9" height="12"/><rect x="1020" y="202" width="9" height="12"/><rect x="1034" y="202" width="9" height="12"/><rect x="1048" y="202" width="9" height="12"/><rect x="1062" y="202" width="9" height="12"/><rect x="1076" y="202" width="9" height="12"/>
+      <rect x="922" y="222" width="9" height="12"/><rect x="936" y="222" width="9" height="12"/><rect x="950" y="222" width="9" height="12"/><rect x="964" y="222" width="9" height="12"/><rect x="978" y="222" width="9" height="12"/><rect x="992" y="222" width="9" height="12"/><rect x="1006" y="222" width="9" height="12"/><rect x="1020" y="222" width="9" height="12"/><rect x="1034" y="222" width="9" height="12"/><rect x="1048" y="222" width="9" height="12"/><rect x="1062" y="222" width="9" height="12"/><rect x="1076" y="222" width="9" height="12"/>
+    </g>
+    <circle cx="1088" cy="187" r="4" fill="#7ef2e0"/>
+  </g>
+
+  <g>
+    <rect x="910" y="274" width="200" height="88" rx="6" fill="#062b28" stroke="#1a5a54"/>
+    <text x="922" y="294" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1.4" fill="#d9fffa">PATCH PANEL</text>
+    <g fill="#0d4a44" stroke="#1f6a61">
+      <rect x="922" y="306" width="9" height="12"/><rect x="936" y="306" width="9" height="12"/><rect x="950" y="306" width="9" height="12"/><rect x="964" y="306" width="9" height="12"/><rect x="978" y="306" width="9" height="12"/><rect x="992" y="306" width="9" height="12"/><rect x="1006" y="306" width="9" height="12"/><rect x="1020" y="306" width="9" height="12"/><rect x="1034" y="306" width="9" height="12"/><rect x="1048" y="306" width="9" height="12"/><rect x="1062" y="306" width="9" height="12"/><rect x="1076" y="306" width="9" height="12"/>
+      <rect x="922" y="326" width="9" height="12"/><rect x="936" y="326" width="9" height="12"/><rect x="950" y="326" width="9" height="12"/><rect x="964" y="326" width="9" height="12"/><rect x="978" y="326" width="9" height="12"/><rect x="992" y="326" width="9" height="12"/><rect x="1006" y="326" width="9" height="12"/><rect x="1020" y="326" width="9" height="12"/><rect x="1034" y="326" width="9" height="12"/><rect x="1048" y="326" width="9" height="12"/><rect x="1062" y="326" width="9" height="12"/><rect x="1076" y="326" width="9" height="12"/>
+    </g>
+  </g>
+
+  <g>
+    <rect x="910" y="378" width="200" height="88" rx="6" fill="#062b28" stroke="#1a5a54"/>
+    <text x="922" y="398" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1.4" fill="#d9fffa">SERVIDOR</text>
+    <rect x="922" y="410" width="174" height="10" rx="2" fill="#0d4a44"/>
+    <rect x="922" y="426" width="174" height="10" rx="2" fill="#0d4a44"/>
+    <circle cx="1082" cy="415" r="3" fill="#7ef2e0"/>
+    <circle cx="1082" cy="431" r="3" fill="#f6c9ff"/>
+  </g>
+
+  <g>
+    <rect x="910" y="482" width="200" height="70" rx="6" fill="#062b28" stroke="#1a5a54"/>
+    <text x="922" y="502" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1.4" fill="#d9fffa">UPS / ENERGÍA</text>
+    <rect x="922" y="514" width="60" height="20" rx="3" fill="#0d4a44"/>
+    <rect x="928" y="520" width="10" height="8" rx="1" fill="#7ef2e0"/>
+    <rect x="943" y="520" width="10" height="8" rx="1" fill="#7ef2e0" opacity="0.7"/>
+    <rect x="958" y="520" width="10" height="8" rx="1" fill="#7ef2e0" opacity="0.4"/>
+  </g>
+
+  <!-- Bottom tags -->
+  <g font-family="'JetBrains Mono', monospace" font-size="11" letter-spacing="1.6">
+    <rect x="70" y="645" width="158" height="40" rx="20" fill="#052a27" stroke="#15544d"/>
+    <circle cx="92" cy="665" r="3" fill="#7ef2e0"/>
+    <text x="104" y="669" fill="#b8e8e1">INSTALACIÓN</text>
+    <rect x="244" y="645" width="184" height="40" rx="20" fill="#052a27" stroke="#15544d"/>
+    <circle cx="266" cy="665" r="3" fill="#7ef2e0"/>
+    <text x="278" y="669" fill="#b8e8e1">CONFIGURACIÓN</text>
+    <rect x="444" y="645" width="194" height="40" rx="20" fill="#052a27" stroke="#15544d"/>
+    <circle cx="466" cy="665" r="3" fill="#f6c9ff"/>
+    <text x="478" y="669" fill="#b8e8e1">PRUEBAS DE RED</text>
+  </g>
+  <g>
+    <text x="1136" y="669" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="11" letter-spacing="1.8" fill="#7ef2e0">ESTACIONES LISTAS</text>
+  </g>
+</svg>

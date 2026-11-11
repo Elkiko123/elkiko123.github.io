@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Base de datos para cine · Erik Tovar</title>
-    <meta name="description" content="Diseño, creación y administración de base de datos para un sistema de cine en un servidor Ubuntu." />
+    <meta name="description" content="Implementación y administración de bases de datos para un sistema de cine en Ubuntu Server, con control de acceso e integridad de datos." />
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
@@ -37,11 +37,12 @@
         <!-- HERO PROYECTO -->
         <header class="project-hero fade-up">
             <h1>Base de datos para cine</h1>
-            <div class="subtitle">Diseño, creación y administración de BD en servidor Ubuntu</div>
+            <div class="subtitle">PostgreSQL en Ubuntu Server con control de acceso e integridad de datos</div>
             <div class="tech-stack">
                 <span>PostgreSQL</span>
                 <span>Ubuntu Server</span>
                 <span>SQL</span>
+                <span>Control de acceso</span>
             </div>
         </header>
 
@@ -59,9 +60,10 @@
                     facilitar las consultas y garantizar la integridad de la información.
                 </p>
                 <p>
-                    Además del diseño de la estructura, se administraron los permisos de acceso y se implementaron 
-                    políticas de seguridad y respaldos, simulando un entorno de producción real donde la 
-                    disponibilidad y protección de los datos es fundamental.
+                    Además del diseño de la estructura, se administraron los permisos de acceso mediante roles
+                    y privilegios, y se implementaron políticas de seguridad, restricciones e integridad
+                    referencial para proteger la información. También se configuraron respaldos, simulando un
+                    entorno de producción real donde la disponibilidad y protección de los datos es fundamental.
                 </p>
             </div>
             <div class="features">
@@ -72,8 +74,10 @@
                     <li><i class="fas fa-code"></i> Creación de procedimientos almacenados y vistas</li>
                     <li><i class="fas fa-bolt"></i> Implementación de triggers para reglas de negocio</li>
                     <li><i class="fab fa-ubuntu"></i> Configuración de entorno en Ubuntu Server</li>
-                    <li><i class="fas fa-shield-alt"></i> Administración de permisos y usuarios</li>
+                    <li><i class="fas fa-key"></i> Roles, usuarios y privilegios de acceso</li>
+                    <li><i class="fas fa-shield-halved"></i> Integridad de datos y restricciones</li>
                     <li><i class="fas fa-database"></i> Motor de PostgreSQL</li>
+                    <li><i class="fas fa-archive"></i> Políticas de respaldo</li>
                 </ul>
             </div>
         </div>

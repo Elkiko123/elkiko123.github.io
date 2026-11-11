@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cableado de red · Educación a Distancia · Erik Tovar</title>
+    <meta name="description" content="Instalación y organización de cableado de red para habilitar la conectividad de un nuevo departamento académico." />
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/project.css" />
+</head>
+<body>
+    <div id="readProgress" class="read-progress"></div>
+    <div class="container">
+
+        <!-- NAVBAR -->
+        <nav class="navbar" id="navbar">
+            <div class="logo"><span class="dot"></span><strong>erik</strong>tovar<span style="color:var(--text-2)">.dev</span></div>
+            <div class="nav-right">
+                <a href="../index.html" class="btn-back"><i class="fas fa-arrow-left"></i> Volver</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar a modo claro/oscuro">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- BREADCRUMB -->
+        <div class="breadcrumb fade-up">
+            <a href="../index.html">Inicio</a> <i class="fas fa-chevron-right"></i> <span>Proyectos</span> <i class="fas fa-chevron-right"></i> <span class="current">Cableado de red</span>
+        </div>
+
+        <!-- HERO PROYECTO -->
+        <header class="project-hero fade-up">
+            <h1>Cableado de red</h1>
+            <div class="subtitle">Conectividad para el departamento de Educación a Distancia</div>
+            <div class="tech-stack">
+                <span>Redes</span>
+                <span>Cableado estructurado</span>
+                <span>RJ45</span>
+            </div>
+        </header>
+
+        <!-- DESCRIPCIÓN Y CARACTERÍSTICAS -->
+        <div class="project-grid fade-up">
+            <div class="project-description">
+                <p>
+                    <strong>Instalación y organización de cableado de red</strong> para habilitar la conectividad
+                    de un nuevo departamento académico de Educación a Distancia, integrando las nuevas áreas a
+                    la infraestructura existente.
+                </p>
+                <p>
+                    El proyecto incluyó el tendido de cableado hacia los puntos de red requeridos, el ponchado
+                    de conectores RJ45, la organización de los cables en el patch panel y el etiquetado de cada
+                    puerto para identificar su ubicación dentro del departamento.
+                </p>
+                <p>
+                    Finalmente se realizaron pruebas de continuidad y conectividad, y se documentó la distribución
+                    de los puertos para facilitar el soporte y las futuras ampliaciones de la red.
+                </p>
+            </div>
+            <div class="features">
+                <h3>Actividades realizadas</h3>
+                <ul>
+                    <li><i class="fas fa-route"></i> Tendido de cableado hacia los puntos de red</li>
+                    <li><i class="fas fa-plug"></i> Ponchado de conectores RJ45</li>
+                    <li><i class="fas fa-server"></i> Organización del patch panel y switch</li>
+                    <li><i class="fas fa-ethernet"></i> Peinado y orden del cableado</li>
+                    <li><i class="fas fa-tags"></i> Etiquetado de puertos y estaciones</li>
+                    <li><i class="fas fa-circle-check"></i> Pruebas de continuidad y conectividad</li>
+                    <li><i class="fas fa-book"></i> Documentación de la distribución de puertos</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- DIAGRAMA -->
+        <section class="gallery fade-up">
+            <h2>Diagrama del proyecto</h2>
+            <div class="gallery-grid diagram-grid">
+                <div class="gallery-item" data-caption="Patch panel, switch y cableado organizado">
+                    <img src="../img/cableado-red.svg" alt="Diagrama de patch panel y switch conectados con cableado estructurado" loading="lazy" />
+                    <div class="caption">Patch panel, switch y cableado organizado</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VOLVER AL PORTFOLIO -->
+        <div class="back-to-portfolio fade-up">
+            <a href="../index.html"><i class="fas fa-arrow-left"></i> Volver al portafolio</a>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <span>© 2026 Erik Tovar · <i class="fas fa-code"></i> con <span style="color:var(--pink);"><i class="fas fa-heart"></i></span></span>
+        </footer>
+
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vista ampliada de imagen" aria-hidden="true">
+        <div class="lightbox-figure">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar"><i class="fas fa-times"></i></button>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Imagen anterior"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Imagen siguiente"><i class="fas fa-chevron-right"></i></button>
+            <img id="lightboxImg" src="" alt="Vista ampliada" />
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Elementos flotantes interactivos -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+    <button id="scrollTopBtn" class="scroll-top" aria-label="Volver arriba"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="../js/orb.js"></script>
+    <script src="../js/project.js"></script>
+</body>
+</html>
