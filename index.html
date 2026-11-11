@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erik Tovar · Portafolio</title>
+    <meta name="description"
+        content="Portafolio de Erik Tovar Carreón — Estudiante de ISC con proyectos en web, escritorio, móvil, IA y bases de datos." />
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Estilos del portafolio principal -->
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+    <div class="container">
+
+        <nav class="navbar" id="navbar">
+            <div class="logo"><span class="dot"></span><strong>erik</strong>tovar<span
+                    style="color:var(--text-2)">.dev</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">sobre-mi</a></li>
+                <li><a href="#skills">habilidades</a></li>
+                <li><a href="#experience">experiencia</a></li>
+                <li><a href="#projects">proyectos</a></li>
+                <li><a href="#contact">contacto</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar a modo claro/oscuro">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false"><i class="fas fa-bars"></i></button>
+            </div>
+        </nav>
+
+        <header class="hero">
+            <div class="hero-copy">
+                <div class="eyebrow">whoami</div>
+                <h1><span class="typewriter" id="typewriter" data-text="Erik Tovar"></span><span class="cursor-blink">_</span><br><span class="accent">Carreon</span></h1>
+                <div class="role-line">Ingeniería en Sistemas Computacionales · 9° semestre</div>
+                <p class="desc">
+                    Desarrollo aplicaciones web y de escritorio, diseño bases de datos y exploro
+                    ciberseguridad aplicada. Me interesa construir cosas que funcionen bien y
+                    seguir aprendiendo en el camino.
+                </p>
+                <div class="hero-actions">
+                    <a href="mailto:tovarcarreonerik@gmail.com" class="btn-primary"><i class="fas fa-envelope"></i>
+                        Escríbeme</a>
+                    <a href="https://github.com/Elkiko123" target="_blank" class="btn-ghost"><i
+                            class="fab fa-github"></i> Ver GitHub</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <canvas id="heroOrb" class="hero-orb" aria-hidden="true"></canvas>
+                <div class="terminal" aria-hidden="true">
+                    <div class="terminal-bar">
+                        <span class="tdot"></span><span class="tdot"></span><span class="tdot"></span>
+                        <span class="path">~/erik-tovar/perfil.sh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <span class="prompt">$</span> <span class="cmd">cat perfil.json</span><br>
+                        <span class="out">{</span>
+                        <span class="out">&nbsp;&nbsp;<span class="key">"rol"</span>: "Estudiante ISC",</span>
+                        <span class="out">&nbsp;&nbsp;<span class="key">"enfoque"</span>: "web · bases de datos ·
+                            seguridad",</span>
+                        <span class="out">&nbsp;&nbsp;<span class="key">"stack"</span>: ["C#", "JS", "PostgreSQL",
+                            "Flutter"],</span>
+                        <span class="out">&nbsp;&nbsp;<span class="key">"ubicacion"</span>: "Cd. Juárez, MX",</span>
+                        <span class="out">&nbsp;&nbsp;<span class="key">"disponible"</span>: true</span>
+                        <span class="out">}</span>
+                        <span class="prompt">$</span> <span class="cmd">_</span><span class="caret"></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Resumen numérico -->
+        <div class="stats-container fade-up" aria-label="Resumen del perfil">
+            <div class="stat-box">
+                <span class="stat-num" data-target="7">7</span>
+                <span class="stat-label">Proyectos</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-num" data-target="7">7</span>
+                <span class="stat-label">Certificaciones</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-num" data-target="6">6</span>
+                <span class="stat-label">Meses de soporte</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-num" data-target="9">9</span>
+                <span class="stat-label">Semestre ISC</span>
+            </div>
+        </div>
+
+        <!-- Cinta cinética de tecnologías -->
+        <div class="tech-marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <div class="marquee-group">
+                    <span>C#</span><span class="sep">/</span>
+                    <span>Flutter</span><span class="sep">/</span>
+                    <span>PostgreSQL</span><span class="sep">/</span>
+                    <span>SQL Server</span><span class="sep">/</span>
+                    <span>JavaScript</span><span class="sep">/</span>
+                    <span>Python</span><span class="sep">/</span>
+                    <span>Kali Linux</span><span class="sep">/</span>
+                    <span>Nmap</span><span class="sep">/</span>
+                    <span>Wireshark</span><span class="sep">/</span>
+                    <span>Cisco CCNA</span><span class="sep">/</span>
+                </div>
+                <div class="marquee-group">
+                    <span>C#</span><span class="sep">/</span>
+                    <span>Flutter</span><span class="sep">/</span>
+                    <span>PostgreSQL</span><span class="sep">/</span>
+                    <span>SQL Server</span><span class="sep">/</span>
+                    <span>JavaScript</span><span class="sep">/</span>
+                    <span>Python</span><span class="sep">/</span>
+                    <span>Kali Linux</span><span class="sep">/</span>
+                    <span>Nmap</span><span class="sep">/</span>
+                    <span>Wireshark</span><span class="sep">/</span>
+                    <span>Cisco CCNA</span><span class="sep">/</span>
+                </div>
+            </div>
+        </div>
+
+
+        <section id="about" class="fade-up">
+            <div class="section-head">
+                <span class="index">01</span>
+                <span class="section-title">Sobre mí</span>
+                <span class="rule"></span>
+            </div>
+            <div class="about-card">
+                <p>
+                    Estudiante de 9° semestre de Ingeniería en Sistemas Computacionales con conocimientos en
+                    desarrollo web, programación y bases de datos. Manejo tecnologías como C#, HTML, CSS, JavaScript
+                    y SQL en PostgreSQL y SQL Server. Soy proactivo, responsable y con facilidad para trabajar en
+                    equipo. Me interesa seguir aprendiendo, mejorar mis habilidades técnicas y aportar soluciones a
+                    proyectos reales.
+                </p>
+                <div class="about-meta">
+                    <span><i class="fas fa-map-pin"></i> Cd. Juárez, México</span>
+                    <span><i class="fas fa-graduation-cap"></i> 9° semestre</span>
+                    <span><i class="fas fa-language"></i> Español nativo · Inglés intermedio</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="fade-up">
+            <div class="section-head">
+                <span class="index">02</span>
+                <span class="section-title">Habilidades técnicas</span>
+                <span class="rule"></span>
+            </div>
+            <div class="grid-2">
+                <div class="card">
+                    <h3><i class="fas fa-laptop-code"></i> Lenguajes & frameworks</h3>
+                    <div>
+                        <span class="skill-tag"><i class="fas fa-code" style="color:#178600;"></i> <span
+                                class="skill-name">C#</span></span>
+                        <span class="skill-tag"><i class="fas fa-mobile-alt" style="color:#02569B;"></i> <span
+                                class="skill-name">Flutter</span></span>
+                        <span class="skill-tag"><i class="fab fa-html5" style="color:#E34F26;"></i> <span
+                                class="skill-name">HTML5</span></span>
+                        <span class="skill-tag"><i class="fab fa-css3-alt" style="color:#1572B6;"></i> <span
+                                class="skill-name">CSS3</span></span>
+                        <span class="skill-tag"><i class="fab fa-js" style="color:#F7DF1E;"></i> <span
+                                class="skill-name">JavaScript</span></span>
+                        <span class="skill-tag"><i class="fab fa-python" style="color:#3776AB;"></i> <span
+                                class="skill-name">Python</span></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-database"></i> Bases de datos & herramientas</h3>
+                    <div>
+                        <span class="skill-tag"><i class="fas fa-database" style="color:#336791;"></i> <span
+                                class="skill-name">PostgreSQL</span></span>
+                        <span class="skill-tag"><i class="fas fa-server" style="color:#CC2927;"></i> <span
+                                class="skill-name">SQL Server</span></span>
+                        <span class="skill-tag"><i class="fas fa-fire" style="color:#3ECF8E;"></i> <span
+                                class="skill-name">Supabase</span></span>
+                        <span class="skill-tag"><i class="fas fa-table" style="color:#A4373A;"></i> <span
+                                class="skill-name">Access</span></span>
+                        <span class="skill-tag"><i class="fas fa-network-wired" style="color:#0099CC;"></i> <span
+                                class="skill-name">Cisco Packet Tracer</span></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-terminal"></i> Seguridad & Redes</h3>
+                    <div>
+                        <span class="skill-tag"><i class="fab fa-linux" style="color:#FCC624;"></i> <span
+                                class="skill-name">Kali Linux</span></span>
+                        <span class="skill-tag"><i class="fas fa-search" style="color:#4682B4;"></i> <span
+                                class="skill-name">Nmap</span></span>
+                        <span class="skill-tag"><i class="fas fa-shark" style="color:#1679A7;"></i> <span
+                                class="skill-name">Wireshark</span></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-server"></i> Sistemas & Office</h3>
+                    <div>
+                        <span class="skill-tag"><i class="fab fa-windows" style="color:#0078D6;"></i> <span
+                                class="skill-name">Windows Server</span></span>
+                        <span class="skill-tag"><i class="fab fa-ubuntu" style="color:#E95420;"></i> <span
+                                class="skill-name">Ubuntu Server</span></span>
+                        <span class="skill-tag"><i class="fas fa-file-word" style="color:#2B579A;"></i> <span
+                                class="skill-name">Word</span></span>
+                        <span class="skill-tag"><i class="fas fa-file-excel" style="color:#217346;"></i> <span
+                                class="skill-name">Excel</span></span>
+                        <span class="skill-tag"><i class="fas fa-file-powerpoint" style="color:#D24726;"></i> <span
+                                class="skill-name">PowerPoint</span></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-certificate"></i> Certificaciones</h3>
+                    <ul>
+                        <li>CCNA: Introducción a las redes</li>
+                        <li>CCNA: Switching, Routing, Wireless Essentials</li>
+                        <li>CCNA: Enterprise Networking, Security, and Automation (en curso)</li>
+                        <li>Fundamentos de Ciberseguridad (Cisco Networking Academy)</li>
+                        <li>Hacking Ético (Cisco Networking Academy)</li>
+                        <li>Python Essentials 1</li>
+                        <li>JavaScript Essentials 1</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="fade-up">
+            <div class="section-head">
+                <span class="index">03</span>
+                <span class="section-title">Experiencia laboral</span>
+                <span class="rule"></span>
+            </div>
+            <div class="card timeline">
+                <div class="tl-item">
+                    <h4>Soporte técnico · Centro de Cómputo (Servicio Social)</h4>
+                    <span class="meta"><i class="fas fa-tools"></i> 6 meses · Área de soporte técnico</span>
+                    <p>Levantamiento y seguimiento de tickets de soporte técnico en toda la institución. Atención a usuarios, diagnóstico de problemas de hardware y software, mantenimiento preventivo y correctivo de equipos de cómputo.</p>
+                </div>
+                <div class="tl-item">
+                    <h4>Operador de producción · Flextronics</h4>
+                    <span class="meta"><i class="fas fa-microchip"></i> Ensamble</span>
+                    <p>Operador de ensamble en línea de producción, asegurando calidad y eficiencia.</p>
+                </div>
+                <div class="tl-item">
+                    <h4>Capturista de datos · Datamark de México</h4>
+                    <span class="meta"><i class="fas fa-database"></i> Procesamiento de datos</span>
+                    <p>Captura y verificación de datos con precisión, manejo de bases de datos internas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="fade-up">
+            <div class="section-head">
+                <span class="index">04</span>
+                <span class="section-title">Proyectos escolares</span>
+                <span class="rule"></span>
+            </div>
+            <div class="project-filters fade-up">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="escritorio">Escritorio</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="movil">Móvil</button>
+                <button class="filter-btn" data-filter="ia">IA</button>
+                <button class="filter-btn" data-filter="bd">Bases de Datos</button>
+                <button class="filter-btn" data-filter="3d">3D</button>
+            </div>
+            <div class="project-grid" id="projectGrid">
+
+                <!-- Proyecto 01: Farmacia -->
+                <div class="project-card" data-category="escritorio">
+                    <div class="project-thumb" data-image="img/farmacia.png">
+                        <span class="thumb-num">PROYECTO 01</span>
+                        <span class="zoom-icon"><i class="fas fa-search-plus"></i></span>
+                        <img src="img/farmacia.png" alt="Gestión de inventarios" loading="lazy">
+                    </div>
+                    <div class="body">
+                        <span class="project-kind"><i class="fas fa-desktop"></i> Aplicación de escritorio</span>
+                        <h4>Gestión de inventarios</h4>
+                        <p>Aplicación para administración de inventario en farmacia, con control de existencias y
+                            movimientos.</p>
+                        <div class="stack">
+                            <span><i class="fas fa-code" style="color:#178600;"></i> C#</span>
+                            <span><i class="fas fa-table" style="color:#A4373A;"></i> Access</span>
+                        </div>
+                        <a href="pages/farmacia.html" class="project-link"><i class="fas fa-arrow-right"></i> Ver
+                            proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 02: Cine (BD) -->
+                <div class="project-card" data-category="bd">
+                    <div class="project-thumb" data-image="img/cine.jpg">
+                        <span class="thumb-num">PROYECTO 02</span>
+                        <span class="zoom-icon"><i class="fas fa-search-plus"></i></span>
+                        <img src="img/cine.jpg" alt="Base de datos para cine" loading="lazy">
+                    </div>
+                    <div class="body">
+                        <span class="project-kind"><i class="fas fa-database"></i> Base de datos</span>
+                        <h4>Base de datos para cine</h4>
+                        <p>Diseño, creación y administración de BD para sistema de cine en servidor Ubuntu.</p>
+                        <div class="stack">
+                            <span><i class="fas fa-database" style="color:#336791;"></i> PostgreSQL</span>
+                            <span><i class="fab fa-ubuntu" style="color:#E95420;"></i> Ubuntu Server</span>
+                        </div>
+                        <a href="pages/cine.html" class="project-link"><i class="fas fa-arrow-right"></i> Ver
+                            proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 03: Automatización -->
+                <div class="project-card" data-category="web">
+                    <div class="project-thumb" data-image="img/automatizacion.png">
+                        <span class="thumb-num">PROYECTO 03</span>
+                        <span class="zoom-icon"><i class="fas fa-search-plus"></i></span>
+                        <img src="img/automatizacion.png" alt="Automatización administrativa" loading="lazy">
+                    </div>
+                    <div class="body">
+                        <span class="project-kind"><i class="fas fa-globe"></i> Aplicación web</span>
+                        <h4>Automatización administrativa</h4>
+                        <p>Aplicación web para automatizar procesos administrativos y reducir trabajo manual.</p>
+                        <div class="stack">
+                            <span><i class="fab fa-html5" style="color:#E34F26;"></i> HTML</span>
+                            <span><i class="fab fa-css3-alt" style="color:#1572B6;"></i> CSS</span>
+                            <span><i class="fab fa-js" style="color:#F7DF1E;"></i> JS</span>
+                            <span><i class="fas fa-database" style="color:#4479A1;"></i> MySQL</span>
+                        </div>
+                        <a href="pages/admin.html" class="project-link"><i class="fas fa-arrow-right"></i> Ver
+                            proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 04: Rubik -->
+                <div class="project-card" data-category="3d">
+                    <div class="project-thumb" data-image="img/RibikCube.png">
+                        <span class="thumb-num">PROYECTO 04</span>
+                        <span class="zoom-icon"><i class="fas fa-search-plus"></i></span>
+                        <img src="img/RibikCube.png" alt="Cubo de Rubik 3D" loading="lazy">
+                    </div>
+                    <div class="body">
+                        <span class="project-kind"><i class="fas fa-cube"></i> Aplicación 3D</span>
+                        <h4>Cubo de Rubik 3D</h4>
+                        <p>Aplicación interactiva en 3D que simula y resuelve el cubo de Rubik.</p>
+                        <div class="stack">
+                            <span><i class="fas fa-code" style="color:#178600;"></i> C#</span>
+                            <span><i class="fas fa-cube" style="color:#5586A4;"></i> OpenGL</span>
+                        </div>
+                        <a href="pages/rubikcube.html" class="project-link"><i class="fas fa-arrow-right"></i> Ver
+                            proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 05: Serenity -->
+                <div class="project-card" data-category="movil ia">
+                    <div class="project-thumb" data-image="img/ansiedad.png">
+                        <span class="thumb-num">PROYECTO 05</span>
+                        <span class="zoom-icon"><i class="fas fa-search-plus"></i></span>
+                        <img src="img/ansiedad.png" alt="App para ansiedad social" loading="lazy">
+                    </div>
+                    <div class="body">
+                        <span class="project-kind"><i class="fas fa-mobile-alt"></i> Aplicación móvil</span>
+                        <h4>App para ansiedad social</h4>
+                        <p>Desarrollo de app móvil con funciones de inteligencia artificial para apoyo emocional.</p>
+                        <div class="stack">
+                            <span><i class="fas fa-mobile-alt" style="color:#02569B;"></i> Flutter</span>
+                            <span><i class="fas fa-fire" style="color:#3ECF8E;"></i> Supabase</span>
+                            <span><i class="fas fa-brain" style="color:var(--signal);"></i> IA</span>
+                        </div>
+                        <a href="pages/Sereniti.html" class="project-link"><i class="fas fa-arrow-right"></i> Ver
+                            proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 06: Carro -->
+                <div class="project-card" data-category="movil">
+                    <div class="project-thumb" data-image="img/carro.png">
+                        <span class="thumb-num">PROYECTO 06</span>
+                        <span class="zoom-icon"><i class="fas fa-search-plus"></i></span>
+                        <img src="img/carro.png" alt="Control de carro electrónico" loading="lazy">
+                    </div>
+                    <div class="body">
+                        <span class="project-kind"><i class="fas fa-mobile-alt"></i> Aplicación móvil</span>
+                        <h4>Control de carro electrónico</h4>
+                        <p>Aplicación móvil para controlar un carro electrónico vía Bluetooth con Arduino.</p>
+                        <div class="stack">
+                            <span><i class="fas fa-mobile-alt" style="color:#02569B;"></i> Flutter</span>
+                            <span><i class="fas fa-microchip" style="color:#00979D;"></i> Arduino</span>
+                        </div>
+                        <a href="pages/carro.html" class="project-link"><i class="fas fa-arrow-right"></i> Ver
+                            proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 07: FitTrack AI -->
+                <div class="project-card" data-category="movil ia">
+                    <div class="project-thumb thumb-top" data-image="img/Exercise/Gym.png">
+                        <span class="thumb-num">PROYECTO 07</span>
+                        <span class="zoom-icon"><i class="fas fa-search-plus"></i></span>
+                        <img src="img/Exercise/Gym.png" alt="FitTrack AI" loading="lazy">
+                    </div>
+                    <div class="body">
+                        <span class="project-kind"><i class="fas fa-dumbbell"></i> App móvil · IA</span>
+                        <h4>FitTrack AI</h4>
+                        <p>Rutinas de gimnasio, calorías calculadas con IA y rastreo GPS en tiempo real.</p>
+                        <div class="stack">
+                            <span><i class="fas fa-mobile-alt" style="color:#02569B;"></i> Flutter</span>
+                            <span><i class="fas fa-fire" style="color:#3ECF8E;"></i> Supabase</span>
+                            <span><i class="fas fa-brain" style="color:var(--signal);"></i> IA</span>
+                            <span><i class="fas fa-map-location-dot" style="color:#34A853;"></i> GPS</span>
+                        </div>
+                        <a href="pages/fittrack.html" class="project-link"><i class="fas fa-arrow-right"></i> Ver
+                            proyecto</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="education" class="fade-up">
+            <div class="section-head">
+                <span class="index">05</span>
+                <span class="section-title">Educación</span>
+                <span class="rule"></span>
+            </div>
+            <div class="grid-2">
+                <div class="card">
+                    <h3><i class="fas fa-graduation-cap"></i> Ing. Sistemas Computacionales</h3>
+                    <p style="color:var(--text-1);">9° semestre · Instituto Tecnológico de Cd. Juárez</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-tools"></i> Técnico en Plásticos</h3>
+                    <p style="color:var(--text-1);">Conalep Juárez 1</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="fade-up">
+            <div class="section-head">
+                <span class="index">06</span>
+                <span class="section-title">Contacto</span>
+                <span class="rule"></span>
+            </div>
+            <div class="contact-card">
+                <div class="contact-links">
+                    <a href="tel:+526564433597"><i class="fas fa-phone-alt"></i> +52 656 443 3597</a>
+                    <a href="mailto:tovarcarreonerik@gmail.com"><i class="fas fa-envelope"></i>
+                        tovarcarreonerik@gmail.com</a>
+                    <a href="https://github.com/Elkiko123" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/erik-tovar-carre%C3%B3n-a06a27350/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i> LinkedIn</a>
+                </div>
+                <div class="contact-loc"><i class="fas fa-map-marker-alt"></i> Ciudad Juárez, Chihuahua, México</div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <span>© 2026 Erik Tovar · hecho con <span class="heart"><i class="fas fa-heart"></i></span> y café</span>
+            <span><i class="fas fa-code"></i> diseño artesanal</span>
+        </footer>
+    </div>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vista ampliada de imagen" aria-hidden="true">
+        <div class="lightbox-figure">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar"><i class="fas fa-times"></i></button>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Imagen anterior"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Imagen siguiente"><i class="fas fa-chevron-right"></i></button>
+            <img id="lightboxImg" src="" alt="Vista ampliada" />
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Elementos flotantes interactivos -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+    <button id="scrollTopBtn" class="scroll-top" aria-label="Volver arriba"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Scripts -->
+    <script src="js/orb.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

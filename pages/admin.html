@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automatización administrativa · Erik Tovar</title>
+    <meta name="description" content="Aplicación web JS/MySQL para automatizar procesos administrativos de una organización." />
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/project.css" />
+</head>
+<body>
+    <div id="readProgress" class="read-progress"></div>
+    <div class="container">
+
+        <!-- NAVBAR -->
+        <nav class="navbar" id="navbar">
+            <div class="logo"><span class="dot"></span><strong>erik</strong>tovar<span style="color:var(--text-2)">.dev</span></div>
+            <div class="nav-right">
+                <a href="../index.html" class="btn-back"><i class="fas fa-arrow-left"></i> Volver</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar a modo claro/oscuro">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- BREADCRUMB -->
+        <div class="breadcrumb fade-up">
+            <a href="../index.html">Inicio</a> <i class="fas fa-chevron-right"></i> <span>Proyectos</span> <i class="fas fa-chevron-right"></i> <span class="current">Automatización administrativa</span>
+        </div>
+
+        <!-- HERO PROYECTO -->
+        <header class="project-hero fade-up">
+            <h1>Automatización administrativa</h1>
+            <div class="subtitle">Aplicación web para la gestión de procesos internos</div>
+            <div class="tech-stack">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>MySQL</span>
+            </div>
+        </header>
+
+        <!-- DESCRIPCIÓN Y CARACTERÍSTICAS -->
+        <div class="project-grid fade-up">
+            <div class="project-description">
+                <p>
+                    Esta aplicación web fue diseñada para automatizar y optimizar los procesos administrativos
+                    de una organización. Permite gestionar usuarios, procesos, documentos y aprobaciones de
+                    manera centralizada, mejorando la eficiencia y reduciendo tiempos de respuesta.
+                </p>
+                <p>
+                    El sistema cuenta con un módulo de autenticación, un dashboard con indicadores clave,
+                    gestión de procesos, administración de usuarios, generación de reportes en Excel y un
+                    flujo de aprobación de documentos. Todo respaldado por una base de datos relacional.
+                </p>
+                <p>
+                    La interfaz es responsiva y amigable, pensada para ser utilizada por personal administrativo
+                    sin conocimientos técnicos avanzados.
+                </p>
+            </div>
+            <div class="features">
+                <h3>Características principales</h3>
+                <ul>
+                    <li><i class="fas fa-user-lock"></i> Registro e inicio de sesión</li>
+                    <li><i class="fas fa-tachometer-alt"></i> Dashboard con métricas</li>
+                    <li><i class="fas fa-tasks"></i> Gestión de procesos administrativos</li>
+                    <li><i class="fas fa-users"></i> Administración de usuarios y roles</li>
+                    <li><i class="fas fa-file-excel"></i> Generación de reportes en Excel</li>
+                    <li><i class="fas fa-file-signature"></i> Flujo de aprobación de documentos</li>
+                    <li><i class="fas fa-database"></i> Diagrama de base de datos integrado</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- GALERÍA DE CAPTURAS -->
+        <section class="gallery fade-up">
+            <h2>Capturas de pantalla</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-caption="Registro de usuarios">
+                    <img src="../img/LoginAuto.png" alt="Pantalla de registro" loading="lazy" />
+                    <div class="caption">Registro</div>
+                </div>
+                <div class="gallery-item" data-caption="Dashboard principal">
+                    <img src="../img/DashboardAUTO.png" alt="Dashboard" loading="lazy" />
+                    <div class="caption">Dashboard</div>
+                </div>
+                <div class="gallery-item" data-caption="Gestión de procesos">
+                    <img src="../img/gestionAUTO.png" alt="Gestión de procesos" loading="lazy" />
+                    <div class="caption">Gestión de procesos</div>
+                </div>
+                <div class="gallery-item" data-caption="Gestión de usuarios">
+                    <img src="../img/UsersAUTO.png" alt="Gestión de usuarios" loading="lazy" />
+                    <div class="caption">Gestión de usuarios</div>
+                </div>
+                <div class="gallery-item" data-caption="Generación de reportes Excel">
+                    <img src="../img/ReportsAUTO.png" alt="Generación de reportes Excel" loading="lazy" />
+                    <div class="caption">Reportes Excel</div>
+                </div>
+                <div class="gallery-item" data-caption="Documentos">
+                    <img src="../img/Documentos.png" alt="Documentos" loading="lazy" />
+                    <div class="caption">Documentos</div>
+                </div>
+                <div class="gallery-item" data-caption="Aprobaciones">
+                    <img src="../img/Aporbaciones.png" alt="Aprobaciones" loading="lazy" />
+                    <div class="caption">Aprobaciones</div>
+                </div>
+                <div class="gallery-item" data-caption="Diagrama de base de datos">
+                    <img src="../img/BDAUTO.png" alt="Diagrama de base de datos" loading="lazy" />
+                    <div class="caption">Diagrama de BD</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VOLVER AL PORTFOLIO -->
+        <div class="back-to-portfolio fade-up">
+            <a href="../index.html"><i class="fas fa-arrow-left"></i> Volver al portafolio</a>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <span>© 2026 Erik Tovar · <i class="fas fa-code"></i> con <span style="color:var(--pink);"><i class="fas fa-heart"></i></span></span>
+        </footer>
+
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vista ampliada de imagen" aria-hidden="true">
+        <div class="lightbox-figure">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar"><i class="fas fa-times"></i></button>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Imagen anterior"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Imagen siguiente"><i class="fas fa-chevron-right"></i></button>
+            <img id="lightboxImg" src="" alt="Vista ampliada" />
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Elementos flotantes interactivos -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+    <button id="scrollTopBtn" class="scroll-top" aria-label="Volver arriba"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="../js/orb.js"></script>
+    <script src="../js/project.js"></script>
+</body>
+</html>

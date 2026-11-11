@@ -1,0 +1,7 @@
+node_modules/
+.vscode/
+CV_Erik_Tovar_Carreon.pdf
+Plano_Arquitectonico_Clinica.drawio
+*.log
+.DS_Store
+Thumbs.db
